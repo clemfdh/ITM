@@ -50,7 +50,7 @@ fi
 ```
 8)
 ```bash
-if [ -a $1 && -x ]
+if [ -x $1 ]
   then
     echo "file exists and is executable"
 else 
@@ -60,10 +60,57 @@ else
 fi
 ```
 output :
-![capture d ecran 2017-11-10 a 11 36 57](https://user-images.githubusercontent.com/27293298/32671056-7fd097da-c60b-11e7-83ef-f7b6595dc510.png)
+![capture d ecran 2017-11-11 a 10 38 03](https://user-images.githubusercontent.com/27293298/32691381-73a81660-c6cc-11e7-8783-db4940edcbde.png)
 
 
 
 9)
+To do so i used the positional parameter. So the user would just give the name of a file and by executing the script it will tell him if it exists.
+```bash
+name=$1
+if [ -f "$name"]
+  then
+    echo "the file with the name : $name exists "
+  else
+    echo "there is no file with the name : $name"
+    exit;
+fi
+```
+
+console output: 
+![capture d ecran 2017-11-11 a 10 52 56](https://user-images.githubusercontent.com/27293298/32691559-11c165ca-c6cf-11e7-9480-99e12a4874a7.png)
+
+
+10)
+```bash
+PATH=$1
+if [ -d $PATH ]
+  then
+    echo "$PATH is a directory"
+elif [ -f $PATH ]
+  then
+    echo "$PATH is a file"
+else 
+  echo "$PATH is nothing"
+  exit;
+fi
+```
+console output:
+![capture d ecran 2017-11-11 a 11 41 57](https://user-images.githubusercontent.com/27293298/32691967-abc62600-c6d5-11e7-9068-9d622c35d503.png)
+
+11)
+```bash
+
+echo "This is the first positional parameter (the file itself): $0"
+echo "This is the length of the number of positional parameters (not counting \$0): $#"
+echo "This is tall the parameters: $@"
+```
+console output: 
+![capture d ecran 2017-11-11 a 11 53 16](https://user-images.githubusercontent.com/27293298/32692077-53cd4af8-c6d7-11e7-8c3f-25883d8fcb3c.png)
+
+12)
+i open crontab -e. then i edit the document as follow: 
+
+5 * * * * /our/path.sh >> ~/Docments/my.log 2>&1
 
 
