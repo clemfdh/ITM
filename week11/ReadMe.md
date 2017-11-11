@@ -9,7 +9,7 @@ Lab week 11 - chap 8
 ```bash
 
 mapfile -t diraar < <(ls -l ~)
-echo ${diraar[3]}
+echo ${diraar[2]}
 echo ${diraar[3]}
 
 ```
@@ -33,12 +33,10 @@ the result : ![capture d ecran 2017-11-07 a 13 18 41](https://user-images.github
 4) 5 * * * *
 
 5)
-![capture d ecran 2017-11-07 a 13 39 21](https://user-images.githubusercontent.com/27293298/32513901-227214a2-c3c1-11e7-88a8-9e264d0fae9f.png)
+![capture d ecran 2017-11-10 a 11 31 52](https://user-images.githubusercontent.com/27293298/32670885-d5c46690-c60a-11e7-8468-c0ce1ec0104e.png)
 
-6)  !!!!!!! 
-```bash
-$1: $PATH
-```
+
+6) $1 = /datapool1 , i replace every occurence in path and my loops of /datapool1 by $1. Then i passed /datapool as the first positional parameter
 
 7)
 ```bash
@@ -57,12 +55,15 @@ if [ -a $1 && -x ]
     echo "file exists and is executable"
 else 
     echo "the positional parameter is not executable"
+    exit;
     
 fi
 ```
 output :
-![capture d ecran 2017-11-07 a 13 39 21](https://user-images.githubusercontent.com/27293298/32516594-707e0888-c3c9-11e7-832c-31d4959bca65.png)
+![capture d ecran 2017-11-10 a 11 36 57](https://user-images.githubusercontent.com/27293298/32671056-7fd097da-c60b-11e7-83ef-f7b6595dc510.png)
+
 
 
 9)
+
 
