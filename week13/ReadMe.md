@@ -23,7 +23,7 @@ sudo adduser mysql-backup
 sudo visudo 
 ```
 then : 
-![itm](images/q4.jpg "Family")
+![ITM]( ../Images/q4.png "Family" )
 
 # 5)
 ```bash
@@ -32,7 +32,7 @@ sudo addgroup mysql-admins
 sudo visudo
 ```
 then:
-![ITM](Images/q5.png "q5")
+![ITM](../Images/q5.png "q5")
 
 # 6)
 ```bash
@@ -41,7 +41,7 @@ sudo adduser mysql-admin
 sudo visudo
 ```
 then: 
-![ITM](images/q6.png "q6")
+![ITM](../Images/q6.png "q6")
 
 # 7)
 ```bash
@@ -49,10 +49,10 @@ then:
 sudo visudo
 ```
 then: 
-![ITM](images/q7.png "q7")
+![ITM](../Images/q7.png "q7")
 
 # 8)
-![ITM](images/q8.png "q8")
+![ITM](../Images/q8.png "q8")
 
 Journatctl is a command, it is use to acces the logs files. It is not a file or a directory so you cannot use it with tail. It is necessary to add parameter to the command journalctl to make it display the content the way you want it to be. 
 
