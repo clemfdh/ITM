@@ -78,7 +78,11 @@ We will have to edit the storage part of the file /etc/systemd/journald.conf
 And add : - Storage=volatile
 
 # 13)
-I have 
+I have 11G on the /dev/sda1. so 20% of 11 is 2.2GB and 30% is 3.3GB
+I need to edit the file and change the value as follow.
+I type, vim journald.conf
+SystemMaxUse=2.2GB
+RuntimeMaxUse=3.3GB
 
 
 # 14)
