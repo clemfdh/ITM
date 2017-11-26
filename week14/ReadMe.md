@@ -1,14 +1,15 @@
-##Homework chapter10
+## Homework chapter10
 
-#1)
-![ITM](images/q1.png "q1")
+# 1)
+![ITM](../Images/14q1.png "q1")
 
-#2)
+
+# 2)
 ```bash 
 sudo dnf install xeyes
 ```
 
-#3)
+# 3)
 ```bash 
 sudo dnf install \ http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm
 -E %fedora).noarch.rpm
@@ -23,9 +24,9 @@ wget  http:
 group.html
 ```
 
-![ITM](images/14q3.png "q3")
+![ITM](../Images/14q3.png "q3")
 
-#4)
+# 4)
 ```bash 
 wget http://download1.rpmfusion.org/nonfree/fedora/releases/26/Everything/x86_64/os/Packages/d/dropbox-2015.10.28-3.fc26.noarch.rpm
 
@@ -33,17 +34,17 @@ dnf install dropbox-2015.10.28-3.fc26.noarch.rpm
 
 ```
 
-#5)
+# 5)
 ```bash 
 apt-get upgrade
 ```
 
-#6)
+# 6)
 ```bash 
 do-release-upgrade 
 ```
 
-#7)
+# 7)
 ```bash 
 sudo apt edit-sources
 
@@ -58,7 +59,7 @@ sudo apt update
 sudo apt install linux-libre-4.14 
 ```
 
-#8)
+# 8)
 ```bash
 sudo dnf upgrade --refresh
 
@@ -69,7 +70,7 @@ sudo dnf system-upgrade download --releasever=27
 sudo dnf system-upgrade reboot
 ```
 
-#9)
+# 9)
 To install denyhosts i just followed the instruction and i ran it with python. 
 
 ```bash
@@ -90,7 +91,7 @@ python /usr/local/bin/denyhosts --config /etc/denyhosts.conf --daemon
 
 ```
 
-#10)
+# 10)
 ```bash
 pip install rgkit
 dnf install python-tkinter
@@ -101,8 +102,8 @@ rgrun ddzialak2.py Dulladob01.py
 
 ```
 
-![ITM](images/14q10.png "q10")
-#11)
+![ITM](../Images/14q10.png "q10")
+# 11)
 ```bash
 git clone https://github.com/jhajek/Linux-text-book-part-1
 
@@ -137,7 +138,7 @@ sudo fc-cache -fv
 ```
 
 
-#12)
+# 12)
 ```bash
 
 
@@ -147,7 +148,7 @@ dnf --enablerepo=remi install httpd php php-common
 sudo systemctl start httpd.service
 ```
 
-#13)
+# 13)
 vi /var/www/html/info.php
 I have php version 7.1.11
 
