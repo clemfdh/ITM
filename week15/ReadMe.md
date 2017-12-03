@@ -17,7 +17,7 @@ sudo upgrade-grub
 ```
 
 # 2)
-![ITM](Images/15q2.png "15q2")
+![ITM](../Images/15q2.png "15q2")
 
 # 3)
 I check the status with : 
@@ -39,14 +39,14 @@ systemctl reboot
  
 # 4)
 There is no difference: 
-![ITM](Images/15q4.png "15q4")
+![ITM](../Images/15q4.png "15q4")
 
 # 5)
 
 ```bash 
 systemd-analyze blame
 ```
-![ITM](Images/15q5.png "15q5")
+![ITM](../Images/15q5.png "15q5")
  
 # 6)
 ```bash 
@@ -54,7 +54,7 @@ systemctl enable httpd.service
 systemctl start httpd.service
 ```
 
-![ITM](Images/15q6.png "15q6")
+![ITM](../Images/15q6.png "15q6")
 
 # 7)
 
@@ -116,7 +116,7 @@ let's find the process IDs:
 ```bash 
 ps -ef | grep firefox
 ```
-![ITM](Images/15q11.png "15q11")
+![ITM](../Images/15q11.png "15q11")
 
 let's kill the process now: 
 
@@ -126,7 +126,7 @@ kill -2 3648
 
 # 12)
 
-![ITM](Images/15q12.png "15q12")
+![ITM](../Images/15q12.png "15q12")
 
 # 13)
 ```bash 
@@ -153,12 +153,12 @@ systemctl kill -s SIGHUP apache2.service
 ```bash 
 systemd-cgls | grep apache
 ```
-![ITM](Images/15q16.png "15q16")
+![ITM](../Images/15q16.png "15q16")
 
 # 17)
 
 
-![ITM](Images/15q17.png "15q17")
+![ITM](../Images/15q17.png "15q17")
 
 # 18)
 ```bash 
@@ -169,11 +169,11 @@ timedatectl set-ntp 1
 ```bash 
 hostnamectl set-hostname itmo-556-cf
 ```
-![ITM](Images/15q19.png "15q19")
+![ITM](../Images/15q19.png "15q19")
 
-![ITM](Images/15q19b.png "15q19b")
+![ITM](../Images/15q19b.png "15q19b")
 
-![ITM](Images/15q19c.png "15q19c")
+![ITM](../Images/15q19c.png "15q19c")
 
 
 
