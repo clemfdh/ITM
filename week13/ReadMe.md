@@ -94,7 +94,7 @@ tap crontab -e. then I edit the document as follow:
 # 15)
 tap crontab -e. then I edit the document as follow:
 
-* * 1 * *  mysqldump –xml -u root world City
+ \* * 1 * *  mysqldump –xml -u root world City
 
 
 # 16)
